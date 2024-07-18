@@ -12,7 +12,7 @@ export default function Navigation() {
         </li>
         <li>
           <Link href="/about-us">About Us</Link>{" "}
-          {path === "/about-us" ? "🔥" : ""}
+          {RegExp(/^(\/about-us)/).exec(path) ? "🔥" : ""}
         </li>
       </ul>
     </nav>
