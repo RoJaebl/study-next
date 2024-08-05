@@ -1,8 +1,7 @@
 import { BASE_URL } from "../(home)/page";
-import styles from "../../styles/moive-videos.module.css";
+import styles from "../../styles/movie-videos.module.css";
 
 async function getVideos(id: string) {
-  console.log(`Fetcing videos: ${Date.now()}`);
   const res = await fetch(`${BASE_URL}/${id}/videos`);
   return res.json();
 }
