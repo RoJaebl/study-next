@@ -1,5 +1,5 @@
-import { BASE_URL } from "../(home)/page";
 import styles from "../../styles/movie-info.module.css";
+import { BASE_URL } from "../constants";
 
 export async function getMovie(id: string) {
   const res = await fetch(`${BASE_URL}/${id}`);

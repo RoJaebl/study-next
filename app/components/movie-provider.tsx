@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { BASE_URL } from "../(home)/page";
 import styles from "../../styles/movie-provider.module.css";
+import { BASE_URL } from "../constants";
 
 interface IProvider {
   link?: string;
