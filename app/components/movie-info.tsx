@@ -2,7 +2,6 @@ import { BASE_URL } from "../(home)/page";
 import styles from "../../styles/movie-info.module.css";
 
 export async function getMovie(id: string) {
-  console.log(`Fetcing movies: ${Date.now()}`);
   const res = await fetch(`${BASE_URL}/${id}`);
   return res.json();
 }
